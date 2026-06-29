@@ -3,7 +3,7 @@
 # will print 8 and 10
 
 # part 2
-# step 1
+# step 1 - Mission Distance Converter
 def meter_to_cm(meters) -> int:
     return meters * 100
 
@@ -30,3 +30,7 @@ def final_price(orginal_price):
     print(Doubling_the_price)
 
 final_price(5)
+# step 3 - Name Formatter
+def connecting_two_strings(str1, str2):
+    return str1 + str2
+print(connecting_two_strings("hi", "iuhdsc"))
