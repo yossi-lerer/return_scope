@@ -43,3 +43,15 @@ def prepares_user_name(first_name, last_name):
     print(user_to_upper)
 
 prepares_user_name("yossi", "lerer")
+# step 4 - Temperature Report 
+def celsius_to_fahrenheit(Celsius):
+    return Celsius * 9 / 5 + 32
+
+def msg_with_fahrenheit(fahrenheit):
+    return f"The temperture in fahrenheit is {fahrenheit}" 
+
+def Temperature_Report(Celsius):
+    convert_c_to_f = celsius_to_fahrenheit(Celsius)
+    report_with_c = msg_with_fahrenheit(convert_c_to_f)
+    print(report_with_c)
+Temperature_Report(32)
