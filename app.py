@@ -32,5 +32,14 @@ def final_price(orginal_price):
 final_price(5)
 # step 3 - Name Formatter
 def connecting_two_strings(str1, str2):
-    return str1 + str2
-print(connecting_two_strings("hi", "iuhdsc"))
+    return str1 + " " + str2
+
+def str_to_uppercase(string):
+    return string.upper()
+
+def prepares_user_name(first_name, last_name):
+    connecting_first_and_last_name = connecting_two_strings(first_name, last_name)
+    user_to_upper = str_to_uppercase(connecting_first_and_last_name)
+    print(user_to_upper)
+
+prepares_user_name("yossi", "lerer")
