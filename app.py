@@ -65,3 +65,16 @@ def final_health():
     final_health = health_healing(new_health, 25)
     print(f"new health is: {final_health}")
 final_health()
+# step 6 - Shopping Bag Total
+def total_price(product1, product2, product3):
+    return product1 + product2 + product3
+def discount_20_percent(total):
+    return total / 100 * 80
+def msg_final_price(discount, price):
+    return f"The final price after a {discount} percent discount is {price}."
+def shopping_Bag_Total():
+    calculate = total_price(50, 80, 150)
+    discount = discount_20_percent(calculate)
+    msg = msg_final_price(20, discount)
+    print(msg)
+shopping_Bag_Total()
