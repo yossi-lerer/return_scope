@@ -1,6 +1,24 @@
 # part 1
 # Q 1
 # will print 8 and 10
+# Q 2 
+# will print Spy, 40, Agent, 2
+# Q 3 
+# will print 30, 20
+# Q 4
+# will print 30, 75, 100
+# Q5
+# will print ['map', 'key', 'torch', 'coin'], ['map', 'key', 'torch', 'coin']
+# Q 6
+# will print ['potion', 'shield'], ['map', 'key']
+# Q 7
+# will print 20, 20
+# Q8
+# will print running, ready, waiting
+# Q9
+# will print 16 and 16 and the last print print error because he doesn't have access to the code inside the function
+# q10
+# will print 25, ['key', 'map', 'coin'], 25, ['key', 'map', 'coin'], 1, ['key', 'map', 'coin']
 
 # part 2
 # step 1 - Mission Distance Converter
