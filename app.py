@@ -189,3 +189,24 @@ def main_trip_fuel_calculator():
     cost_per_passenger = cost_per_passengers(cost, 5)
     print(f"cost per passengers: {cost_per_passenger}")
 main_trip_fuel_calculator()
+# step 13 - List Score Processor
+def sum_of_the_scores(list_score):
+    total_score = 0
+    number_of_score = 0
+    for i in list_score:
+        total_score += i
+        number_of_score += 1
+    return total_score, number_of_score
+def average_score(total_score, number_of_score):
+    return total_score / number_of_score
+def pass_if_it_is_at_least_60(average):
+    if average >= 60:
+        return "pass"
+    else:
+        "fail"
+def main_score_processor():
+    total_score = sum_of_the_scores([80, 60, 90, 50])
+    average = average_score(total_score[0], total_score[1])
+    pass_or_fail = pass_if_it_is_at_least_60(average)
+    print(f"game scores: {pass_or_fail}")
+main_score_processor()
