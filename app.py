@@ -176,3 +176,16 @@ def main_Username_Generator():
     lowercase = username_in_lowercase(join)
     print(lowercase)
 main_Username_Generator()
+# step 12 - Trip Fuel Calculator
+def total_fuel_needed(distance, fuel_usage_km):
+    return distance / fuel_usage_km
+def total_fuel_cost(total_fuel, fuel_price):
+    return total_fuel * fuel_price
+def cost_per_passengers(cost, passengers ):
+    return cost / passengers
+def main_trip_fuel_calculator():
+    calc_fuel = total_fuel_needed(300, 10)
+    cost = total_fuel_cost(calc_fuel, 8)
+    cost_per_passenger = cost_per_passengers(cost, 5)
+    print(f"cost per passengers: {cost_per_passenger}")
+main_trip_fuel_calculator()
