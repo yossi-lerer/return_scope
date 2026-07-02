@@ -55,3 +55,13 @@ def Temperature_Report(Celsius):
     report_with_c = msg_with_fahrenheit(convert_c_to_f)
     print(report_with_c)
 Temperature_Report(32)
+# step 5 - Game Health Calculator
+def health_damage(health, damage):
+    return health - damage
+def health_healing(health, healing):
+    return health + healing
+def final_health():
+    new_health = health_damage(100, 30)
+    final_health = health_healing(new_health, 25)
+    print(f"new health is: {final_health}")
+final_health()
