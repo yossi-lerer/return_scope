@@ -160,3 +160,19 @@ def main_inventory():
     greater = greater_than_100(subtracting)
     print(greater)
 main_inventory()
+# step 11 - Username Generator
+def firstname_the_first_3_characters(first_name):
+    return first_name[:3]
+def lastname_the_first_3_characters(last_name):
+    return last_name[:3]
+def one_username_joined_with_(first_name, last_name):
+    return f"{first_name}_{last_name}"
+def username_in_lowercase(username):
+    return username.lower()
+def main_Username_Generator():
+    first_name = firstname_the_first_3_characters("yossi")
+    last_name = lastname_the_first_3_characters("Lerer")
+    join = one_username_joined_with_(first_name, last_name)
+    lowercase = username_in_lowercase(join)
+    print(lowercase)
+main_Username_Generator()
