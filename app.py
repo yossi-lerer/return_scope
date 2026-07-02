@@ -210,3 +210,16 @@ def main_score_processor():
     pass_or_fail = pass_if_it_is_at_least_60(average)
     print(f"game scores: {pass_or_fail}")
 main_score_processor()
+# step 14 - Order Summary
+def returns_a_sentence(product_name, amount):
+    return f"{product_name} {amount}"
+def sentence_with_the_total(sentence, total):
+    return f"{sentence} {total}"
+def sentence_order_ready(sentence):
+    return f"{sentence} - order ready"
+def main_Order_Summary():
+    order = returns_a_sentence("pc", 5)
+    price = sentence_with_the_total(order, 2500)
+    order_ready = sentence_order_ready(price)
+    print(order_ready)
+main_Order_Summary() 
