@@ -280,3 +280,14 @@ def msg_agent():
     agent = agent_mission("moshe")
     print(f"Mission code: {agent}")
 msg_agent()
+# step 19 - Counter With Local Scope
+counter = 100
+def receives_a_number(number):
+    counter = number
+    return (counter + 10) * 2
+def difference_between_it_and_the_global_counter(number):
+    return f"{number} {counter}"
+def main_counter():
+    rec = receives_a_number(130)
+    print(difference_between_it_and_the_global_counter(rec))
+main_counter()
