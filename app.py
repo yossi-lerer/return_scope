@@ -253,3 +253,20 @@ def main_tax_calculator():
     receipt = receipt_sentence(subtotal_after)
     print(receipt)
 main_tax_calculator()
+# step 17 - Game Score With Global Bonus
+bonus_points = 5
+def returns_the_base_score(wins):
+    return wins * 10
+def adding_the_global_bonus(base_score):
+    return base_score + bonus_points
+def advanced_or_training(score):
+    if score >= 50:
+        return "advanced"
+    else:
+        return "training"
+def main_game_score():
+    base_score = returns_the_base_score(5)
+    bonus = adding_the_global_bonus(base_score)
+    check = advanced_or_training(bonus)
+    print(check)
+main_game_score()
