@@ -239,3 +239,17 @@ def main_bank():
     check = check_balance(withdrawal)
     print(check)
 main_bank()
+# step 16 - Tax Calculator With Global Tax Rate
+tax_rate = 0.17
+def subtotal(product_price, amount):
+    return product_price * amount
+def subtotal_after_tax(subtotal):
+    return subtotal + (subtotal * tax_rate)
+def receipt_sentence(subtotal):
+    return f"the price after tax is {subtotal}"
+def main_tax_calculator():
+    total_before_tax = subtotal(6, 5)
+    subtotal_after = subtotal_after_tax(total_before_tax)
+    receipt = receipt_sentence(subtotal_after)
+    print(receipt)
+main_tax_calculator()
