@@ -291,3 +291,18 @@ def main_counter():
     rec = receives_a_number(130)
     print(difference_between_it_and_the_global_counter(rec))
 main_counter()
+# step 20 - Inventory Update With Shared List Scope
+list_item = ["pc", "house"]
+def add_item(item):
+    list_item.append(item)
+    return len(list_item)
+def msg_inventory(list_len):
+    return f"items are now in list {list_len}"
+def msg_uppercase(msg):
+    return msg.upper()
+def main_Inventory():
+    add = add_item("table")
+    msg = msg_inventory(add)
+    upper = msg_uppercase(msg)
+    print(upper)
+main_Inventory()
