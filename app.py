@@ -270,3 +270,13 @@ def main_game_score():
     check = advanced_or_training(bonus)
     print(check)
 main_game_score()
+# step 18 - Nested Mission Code
+def agent_mission(agent_nam):
+    mission_number = 4452
+    def agent_name(agent_name):
+        return f"{agent_name[:2]}{mission_number}"
+    return agent_name(agent_nam)
+def msg_agent():
+    agent = agent_mission("moshe")
+    print(f"Mission code: {agent}")
+msg_agent()
