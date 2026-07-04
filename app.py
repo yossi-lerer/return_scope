@@ -223,3 +223,19 @@ def main_Order_Summary():
     order_ready = sentence_order_ready(price)
     print(order_ready)
 main_Order_Summary() 
+# step 15 - Basic Bank Action
+def balance_after_deposit(balance, deposit ):
+    return balance + deposit
+def balance_after_withdrawal(balance, withdrawal):
+    return balance - withdrawal
+def check_balance(balance):
+    if balance < 0:
+        return "Warning"
+    else:
+        return "OK"
+def main_bank():
+    deposit = balance_after_deposit(500, 300)
+    withdrawal = balance_after_withdrawal(deposit, 900)
+    check = check_balance(withdrawal)
+    print(check)
+main_bank()
