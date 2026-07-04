@@ -239,3 +239,70 @@ def main_bank():
     check = check_balance(withdrawal)
     print(check)
 main_bank()
+# step 16 - Tax Calculator With Global Tax Rate
+tax_rate = 0.17
+def subtotal(product_price, amount):
+    return product_price * amount
+def subtotal_after_tax(subtotal):
+    return subtotal + (subtotal * tax_rate)
+def receipt_sentence(subtotal):
+    return f"the price after tax is {subtotal}"
+def main_tax_calculator():
+    total_before_tax = subtotal(6, 5)
+    subtotal_after = subtotal_after_tax(total_before_tax)
+    receipt = receipt_sentence(subtotal_after)
+    print(receipt)
+main_tax_calculator()
+# step 17 - Game Score With Global Bonus
+bonus_points = 5
+def returns_the_base_score(wins):
+    return wins * 10
+def adding_the_global_bonus(base_score):
+    return base_score + bonus_points
+def advanced_or_training(score):
+    if score >= 50:
+        return "advanced"
+    else:
+        return "training"
+def main_game_score():
+    base_score = returns_the_base_score(5)
+    bonus = adding_the_global_bonus(base_score)
+    check = advanced_or_training(bonus)
+    print(check)
+main_game_score()
+# step 18 - Nested Mission Code
+def agent_mission(agent_nam):
+    mission_number = 4452
+    def agent_name(agent_name):
+        return f"{agent_name[:2]}{mission_number}"
+    return agent_name(agent_nam)
+def msg_agent():
+    agent = agent_mission("moshe")
+    print(f"Mission code: {agent}")
+msg_agent()
+# step 19 - Counter With Local Scope
+counter = 100
+def receives_a_number(number):
+    counter = number
+    return (counter + 10) * 2
+def difference_between_it_and_the_global_counter(number):
+    return f"{number} {counter}"
+def main_counter():
+    rec = receives_a_number(130)
+    print(difference_between_it_and_the_global_counter(rec))
+main_counter()
+# step 20 - Inventory Update With Shared List Scope
+list_item = ["pc", "house"]
+def add_item(item):
+    list_item.append(item)
+    return len(list_item)
+def msg_inventory(list_len):
+    return f"items are now in list {list_len}"
+def msg_uppercase(msg):
+    return msg.upper()
+def main_Inventory():
+    add = add_item("table")
+    msg = msg_inventory(add)
+    upper = msg_uppercase(msg)
+    print(upper)
+main_Inventory()
